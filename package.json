@@ -23,10 +23,10 @@
     ],
     "main": "app.js",
     "scripts": {
-        "lint": "eslint ./lib/**/*.js",
+        "lint": "eslint \"./lib/**/*.js\"",
         "start": "node app.js",
         "test": "mocha --recursive",
-        "prettier": "prettier './lib/**/*.js' './test/**/*.js' --write",
+        "prettier": "prettier \"./**/*.{js,json}\" --write",
         "upgrade": "npx sort-package-json && ncu -au"
     },
     "dependencies": {
