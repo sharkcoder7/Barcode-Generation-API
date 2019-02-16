@@ -1,7 +1,7 @@
 FROM hivesolutions/alpine_dev:latest
 
 LABEL version="1.0"
-LABEL maintainer="Hive Solutions <development@hive.pt>"
+LABEL maintainer="EdenTech <techdeneb@gmail.com>"
 
 EXPOSE 8080
 
