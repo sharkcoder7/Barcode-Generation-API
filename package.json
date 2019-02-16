@@ -1,0 +1,45 @@
+{
+    "name": "hive-barcodies",
+    "version": "0.1.2",
+    "description": "Simple Web App for barcode functions",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hivesolutions/barcodies.git"
+    },
+    "keywords": [
+        "barcode",
+        "qr"
+    ],
+    "author": "Hive Solutions",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/hivesolutions/barcodies/issues"
+    },
+    "homepage": "https://github.com/hivesolutions/barcodies#readme",
+    "files": [
+        "app.js",
+        "lib/**/*.css",
+        "lib/**/*.js",
+        "test/**/*.js"
+    ],
+    "dependencies": {
+        "mz": "^2.7.0",
+        "express": "^4.16.2",
+        "qr-image": "~3.2.0"
+    },
+    "devDependencies": {
+        "mocha": "^4.0.1",
+        "eslint": "^4.11.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "eslint-plugin-mocha": "^4.11.0"
+    }
+}
