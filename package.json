@@ -6,16 +6,16 @@
         "barcode",
         "qr"
     ],
-    "homepage": "https://github.com/hivesolutions/barcodies#readme",
+    "homepage": "https://github.com/deneb0618/Barcode-Generation-API#readme",
     "bugs": {
-        "url": "https://github.com/hivesolutions/barcodies/issues"
+        "url": "https://github.com/deneb0618/Barcode-Generation-API/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hivesolutions/barcodies.git"
+        "url": "git+https://github.com/deneb0618/Barcode-Generation-API.git"
     },
     "license": "Apache-2.0",
-    "author": "Hive Solutions",
+    "author": "EdenTech",
     "files": [
         "app.js",
         "lib/**/*.js",
