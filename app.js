@@ -15,7 +15,7 @@ process.on("exit", () => {
 app.get("/", (req, res, next) => {
     async function clojure() {
         lib.verifyKey(req);
-        const engine = req.query.engine || "qr-image";
+        const engine = req.query.engine || "qrimage";
         var engineModule = lib.ENGINES[engine];
         var engineInstance = engineModule.singleton();
         await engineInstance.render(req, res, next);
