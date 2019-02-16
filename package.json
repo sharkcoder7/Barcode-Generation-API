@@ -10,6 +10,10 @@
     "bugs": {
         "url": "https://github.com/hivesolutions/barcodies/issues"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hivesolutions/barcodies.git"
+    },
     "license": "Apache-2.0",
     "author": "Hive Solutions",
     "files": [
@@ -18,33 +22,28 @@
         "test/**/*.js"
     ],
     "main": "app.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/hivesolutions/barcodies.git"
-    },
     "scripts": {
+        "lint": "eslint ./lib/**/*.js",
         "start": "node app.js",
-        "test": "mocha",
+        "test": "mocha --recursive",
+        "prettier": "prettier './lib/**/*.js' './test/**/*.js' --write",
         "upgrade": "npx sort-package-json && ncu -au"
     },
     "dependencies": {
         "consola": "^1.4.1",
         "express": "^4.16.3",
-        "hive-js-util": "^0.1.15",
+        "hive-js-util": "^0.1.20",
         "mz": "^2.7.0",
         "qr-image": "^3.2.0",
         "qrcode": "^1.2.0"
     },
     "devDependencies": {
         "eslint": "^4.19.1",
-        "eslint-config-standard": "^11.0.0",
-        "eslint-plugin-import": "^2.12.0",
-        "eslint-plugin-mocha": "^5.0.0",
-        "eslint-plugin-node": "^6.0.1",
-        "eslint-plugin-promise": "^3.8.0",
-        "eslint-plugin-standard": "^3.1.0",
+        "eslint-config-hive": "^0.1.4",
         "mocha": "^5.2.0",
         "npm-check-updates": "^2.14.2",
+        "prettier": "^1.13.5",
+        "prettier-config-hive": "^0.1.1",
         "sort-package-json": "^1.15.0"
     }
 }
