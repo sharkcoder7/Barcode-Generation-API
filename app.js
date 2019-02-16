@@ -2,6 +2,7 @@
 const express = require("express");
 const process = require("process");
 const util = require("hive-js-util");
+const package = require("./package");
 const lib = require("./lib");
 
 // builds the initial application object to be used
@@ -25,11 +26,19 @@ app.get("/", (req, res, next) => {
     async function clojure() {
         lib.verifyKey(req);
         const engine = req.query.engine || "qrimage";
-        var engineModule = lib.ENGINES[engine];
-        var engineInstance = engineModule.singleton();
+        const engineModule = lib.ENGINES[engine];
+        const engineInstance = engineModule.singleton();
         await engineInstance.render(req, res, next);
     }
     clojure().catch(next);
+});
+
+app.get("/info", (req, res, next) => {
+    res.json({
+        name: info.name,
+        version: info.version,
+        node: process.version
+    });
 });
 
 app.listen(lib.PORT, lib.HOSTNAME, () => {
